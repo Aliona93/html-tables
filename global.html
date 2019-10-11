@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Global CSS</title>
+<style>
+    /* GLOBAL STYLES*/
+    /* TAG SELECTOR*/
+    body {
+        background-color: #AFAEAE;
+        color: #fff;
+        width: 360px;
+    }
+    p {
+        background-color: #454850;
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 10px;
+    }
+     /*CLASS SELECTOR*/
+     /*a..zA..Z0..9-_*/
+    .row{
+        background-color: #FF0000;
+
+    }
+    .col { 
+        border-radius: 20px;
+
+    }
+    /*ID SELECTOR*/
+    #first {
+        border-radius: 100px 0 0 0;
+    
+    }
+    #nine {
+        border-radius: 0 0 100px 0;
+    }
+</style>
+
+</head>
+
+<body>
+    <p id="first">1</p>
+    <p class="col">2</p>
+    <p>3</p>
+    <p class="row">4</p>
+    <p class="col row">5</p>
+    <p class="row">6</p>
+    <p>7</p>
+    <p class="col">8</p>
+    <p id="nine">9</p>
+
+    
+</body>
+</html>
