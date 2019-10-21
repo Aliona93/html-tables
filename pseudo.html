@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+            margin: 0;
+            font-family: Arial; 
+        }
+        form {
+            background-color: #445;
+            padding: 50px;
+        }
+        input {
+            width: 100px;
+            padding: 10px;
+            border: 1px solid #222;
+            outline: none;
+            border-radius: 2px;
+            transition: 0.5s;
+        }
+        button {
+            padding: 10px;
+            border: 1px solid #222;
+            border-radius: 2px;
+            background-color: rgb(187, 208, 236);
+            color: rgb(0, 132, 255);
+
+        }
+        button:hover {
+            background-color: rgb(187, 255, 0);
+        }
+        input:focus {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://yandex.ru/search/">
+        <input name="text" autofocus placeholder="Search" type="text">
+        <button>&#9655</button>
+        
+    </form>
+</body>
+</html>

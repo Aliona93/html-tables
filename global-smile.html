@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        #smile{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border-radius: 200px;
+            margin: 100px;
+        }
+        .eye {
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            border-radius: 100%;
+            border: 3px solid green;
+            border-right-width: 0;
+        }
+        .left{
+            float: left;
+            margin-left: 10px;
+            margin-top: 50px
+
+        }
+        .right{
+            float:right;
+            margin-right: 10px;
+            margin-top: 50px;
+        }
+        .mouth{
+            width: 50px;
+            height: 20px;
+            background-color: orange;
+            float: left;
+            margin-left: 25px;
+            margin-top: 120px;
+        }
+        .eye:hover{
+            transform:scaleY(0.5)
+        }
+    </style>
+</head>
+<body>
+    <div id="smile">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>

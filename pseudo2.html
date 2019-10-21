@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+    #smile{
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        font-size: 150px;
+        text-align: center;
+        transition: 1s;
+        border-radius: 200px;
+    }
+    #smile::before{
+        content: "]";
+    }
+    #smile:hover{
+        transform: rotate(90deg);
+        border-radius: 0;
+    }
+    </style>
+</head>
+<body>
+    <div id="smile">
+        :)
+
+    </div>
+</body>
+</html>

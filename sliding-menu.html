@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #666;
+            margin: 0;
+           
+        }
+        #navigation {
+            background-color: #333;
+            width: 250px;
+            box-shadow: 0 0 3px 2px #111;
+            margin-left: -253px;
+            transition: 0.5s;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li {
+            padding: 15px 20px 15px 20px;
+            border-bottom: 1px solid #222;
+        }
+        #arrow {
+            font-size: 60px;
+            margin-left: 250px;
+            color: #333;
+            /*Link to flashing animation*/
+            animation: flashing 2s infinite;
+        }
+        li:hover {
+            background-color: #555;
+
+        }
+        li:last-child:hover {
+            background-color: transparent;
+
+        }
+        #navigation:hover {
+            margin-left: 0px;
+            
+        }
+        @keyframes flashing {
+            from{ color: #3338; }
+            to{   color: #333F;      }
+
+        }
+    </style>
+</head>
+<body>
+    <nav id="navigation">
+        <ul>
+            <li><a href=""> <img src="http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/32/red-home-icon.png" alt=""> Home</a></li>
+            <li><a href=""> <img src="http://icons.iconarchive.com/icons/yohproject/cute/32/camera-2-icon.png" alt=""> Photos</a></li>
+            <li><a href=""> <img src="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/32/application-community-icon.png" alt=""> Communities</a></li>
+            <li><a href=""> <img src="http://icons.iconarchive.com/icons/atopsy/iwork/32/Pages-icon.png" alt=""> Pages</a></li>
+            <li><a href=""> <img src="http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/32/32364-hot-pepper-icon.png" alt=""> Hot</a></li>
+            <li><a id="arrow" href="">&#10263</a></li>
+        </ul>
+
+    </nav>
+</body>
+</html>
