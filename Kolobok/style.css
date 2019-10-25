@@ -1,0 +1,57 @@
+body {
+    background-color: #333;
+}
+#road {
+    background-color: burlywood;
+    width: 500px;
+    height: 10px;
+    margin-top: 600px;
+}
+#bobby {
+    width: 100px;
+    height: 20px;
+    background-color: orange;
+    padding-top: 80px;
+    transform: translateY(-125px);
+    animation: move 2.5s 1;
+}
+#bobby-wrapper {
+    border: 1px dotted aqua;
+    animation: tilt 0.25s 10;
+}
+#bobby>.legs {
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+
+}
+#bobby>.legs>div {
+    width: 10px;
+    height: 50px;
+    background-color: lavender;
+    float: left;
+    border-bottom: 5px solid lawngreen;
+    
+}
+#bobby>.legs>div:first-child {
+    transform:rotate(15deg);
+    animation: run 0.25s 10;
+
+}
+#bobby>.legs>div:last-child {
+    transform: rotate(-15deg);
+    animation: run 0.25s 10;
+    animation-delay: 0.125s;
+}
+@keyframes run{
+    from{transform: rotate(-15deg);}
+    to{ transform: rotate(15deg);}
+}
+@keyframes move{
+    from{margin-left: 0;}
+    to{margin-left: 600px;}
+}
+@keyframes tilt{
+    from{transform: rotate(-3deg);}
+    to{ transform: rotate(3deg);}
+}
