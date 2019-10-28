@@ -1,0 +1,40 @@
+body {
+   
+    margin: 0;
+}
+/*CSS Reset - сброс стилей*/
+/*Styles*/
+body {
+    background-color: #362121;
+}
+#preloader {
+    width: 5vh;
+    height: 5vh;
+    border: 0.1vh solid white;
+    /*margin-top: 47.5vh;
+    margin-left: auto;
+    margin-right: auto;*/
+    margin: 47.4vh auto;
+    border-radius: 100%;
+    color: white;
+    line-height: 5vh;
+    text-align: center;
+    letter-spacing: normal;
+    animation: rot 1s 5;
+}
+#preloader span:first-child {
+    animation: wave 0.5s 5;
+}
+#preloader span:last-child {
+    animation: wave 0.5s 5;
+    animation-delay: 0.25s;
+}
+/*Animation CSS*/
+@keyframes rot {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes wave {
+    from{ color: #fff0;}
+    to{ color: #ffff;}
+}
