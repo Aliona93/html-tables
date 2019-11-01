@@ -1,0 +1,54 @@
+body {
+    background-image: url(3326336b.png);
+    /*backround-repeat: no-repeat;*/
+}
+#photo {
+    width: 1000px;
+    height: 800px;
+    background-color: #555;
+    border: solid 20px white;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,0.5);
+
+}
+#photo>.text {
+    background-color: cornflowerblue;
+    width: 1000px;
+    height: 800px;
+    
+}
+#photo>.image {
+    background-color: deeppink;
+    width: 1000px;
+    height: 800px;
+    perspective: 1000px;
+
+}
+#photo>.text>ul {
+    float: right;
+}
+#photo>.image>div {
+    width: 200px;
+    height: 800px;
+    background-image: url(222.jpg);
+    float: left;
+}
+#photo>.image>div:nth-child(2) {
+    background-position: -200px 0;
+    transform: rotateY(-25deg) scale(1.05) translateX(-22px);
+}
+#photo>.image>div:nth-child(3) {
+    background-position: -400px 0;
+}
+#photo>.image>div:nth-child(4) {
+    background-position: -600px 0;
+
+}
+#photo>.image>div:nth-child(5) {
+    background-position: -800px 0;
+}
+#photo>.image>div:nth-child(2)>div {
+    height: 800px;
+    width: 200px;
+    background-image: linear-gradient(90deg, #0008,transparent);
