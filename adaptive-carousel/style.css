@@ -1,0 +1,43 @@
+#carousel {
+width: 860px;
+height: 480px;
+background-color: cornflowerblue;
+
+}
+.center {
+position: absolute;
+margin: auto;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+}
+#carousel img {
+    position: absolute;
+}
+#carousel img:nth-child(1) {
+    left: -300px;
+    transform: scale(0.7)
+}
+#carousel img:nth-child(3) {
+    right: -300px;
+    transform: scale(0.7);
+}
+#carousel img:nth-child(2) {
+    z-index: 1;
+    
+}
+#carousel .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+#carousel>.controls>a:nth-child(1) {
+    position: absolute;
+    left: 50px;
+}
+#carousel>.controls>a:nth-child(2) {
+    position: absolute;
+    right: 50px;
+}
+
